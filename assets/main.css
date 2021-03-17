@@ -1,0 +1,138 @@
+html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    background-color: rgb(248, 241, 227);
+    width: 700px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      width: calc(100% - 30px);
+      padding: 0 15px;
+    }
+  
+    .post p {
+      text-align: justify;
+    }
+  }
+  
+  h1 {
+    font-weight: 400;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: rgb(79, 50, 28);
+  }
+  
+  p {
+    line-height: 22.5px;
+  }
+  
+  strong {
+    font-weight: 600;
+  }
+  
+  li {
+    margin: 15px 0;
+  }
+  
+  a {
+    color: rgb(79, 50, 28);
+  }
+  
+  footer {
+    padding: 50px 0 25px 0;
+  }
+  
+  pre {
+    white-space: pre-wrap;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  form textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    font-size: 16px;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+  }
+  
+  form input[type='submit'] {
+    -webkit-appearance: none;
+    margin: 15px 0;
+    font-size: 16px;
+    background-color: #4f321c;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  .last-updated {
+    font-family: monospace;
+    opacity: 0.8;
+  }
+  
+  .portrait {
+    border-radius: 50%;
+    width: 250px;
+    overflow: hidden;
+    height: 250px;
+    margin: auto;
+    background: url(/assets/images/portrait.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .hostname,
+  .post__date {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #4f321cb5;
+  }
+  
+  .post .post__date {
+    margin-left: 0;
+  }
+  
+  .img-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .post img,
+  .img-container img {
+    max-width: 100%;
+  }
+  
+  .heading {
+    text-decoration: none;
+  }
+  
+  .summary {
+    font-style: italic;
+  }
+  
+  .atom-feed svg {
+    width: 15px;
+    height: 15px;
+    fill: #795548;
+  }
+   
